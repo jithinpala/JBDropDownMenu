@@ -13,6 +13,10 @@
 		8B4FC3471ABAE03600EA053A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B4FC3461ABAE03600EA053A /* Images.xcassets */; };
 		8B4FC34A1ABAE03600EA053A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B4FC3481ABAE03600EA053A /* LaunchScreen.xib */; };
 		8B4FC3561ABAE03600EA053A /* JBDropDownMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4FC3551ABAE03600EA053A /* JBDropDownMenuTests.swift */; };
+		8B4FC3621ABAE05500EA053A /* check_mark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4FC3601ABAE05500EA053A /* check_mark@2x.png */; };
+		8B4FC3631ABAE05500EA053A /* done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4FC3611ABAE05500EA053A /* done@2x.png */; };
+		8B4FC3671ABAE06E00EA053A /* JBDropDownList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4FC3651ABAE06E00EA053A /* JBDropDownList.swift */; };
+		8B4FC3681ABAE06E00EA053A /* JBDropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4FC3661ABAE06E00EA053A /* JBDropDownCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		8B4FC34F1ABAE03600EA053A /* JBDropDownMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JBDropDownMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B4FC3541ABAE03600EA053A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B4FC3551ABAE03600EA053A /* JBDropDownMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JBDropDownMenuTests.swift; sourceTree = "<group>"; };
+		8B4FC3601ABAE05500EA053A /* check_mark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_mark@2x.png"; sourceTree = "<group>"; };
+		8B4FC3611ABAE05500EA053A /* done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "done@2x.png"; sourceTree = "<group>"; };
+		8B4FC3651ABAE06E00EA053A /* JBDropDownList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDropDownList.swift; sourceTree = "<group>"; };
+		8B4FC3661ABAE06E00EA053A /* JBDropDownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDropDownCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,8 @@
 		8B4FC33C1ABAE03500EA053A /* JBDropDownMenu */ = {
 			isa = PBXGroup;
 			children = (
+				8B4FC3641ABAE05E00EA053A /* JBDrop Classes */,
+				8B4FC35F1ABAE04B00EA053A /* JB Images */,
 				8B4FC33F1ABAE03600EA053A /* AppDelegate.swift */,
 				8B4FC3411ABAE03600EA053A /* ViewController.swift */,
 				8B4FC3431ABAE03600EA053A /* Main.storyboard */,
@@ -110,6 +120,24 @@
 				8B4FC3541ABAE03600EA053A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B4FC35F1ABAE04B00EA053A /* JB Images */ = {
+			isa = PBXGroup;
+			children = (
+				8B4FC3601ABAE05500EA053A /* check_mark@2x.png */,
+				8B4FC3611ABAE05500EA053A /* done@2x.png */,
+			);
+			name = "JB Images";
+			sourceTree = "<group>";
+		};
+		8B4FC3641ABAE05E00EA053A /* JBDrop Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8B4FC3651ABAE06E00EA053A /* JBDropDownList.swift */,
+				8B4FC3661ABAE06E00EA053A /* JBDropDownCell.swift */,
+			);
+			name = "JBDrop Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +222,8 @@
 			files = (
 				8B4FC3451ABAE03600EA053A /* Main.storyboard in Resources */,
 				8B4FC34A1ABAE03600EA053A /* LaunchScreen.xib in Resources */,
+				8B4FC3621ABAE05500EA053A /* check_mark@2x.png in Resources */,
+				8B4FC3631ABAE05500EA053A /* done@2x.png in Resources */,
 				8B4FC3471ABAE03600EA053A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B4FC3681ABAE06E00EA053A /* JBDropDownCell.swift in Sources */,
 				8B4FC3421ABAE03600EA053A /* ViewController.swift in Sources */,
 				8B4FC3401ABAE03600EA053A /* AppDelegate.swift in Sources */,
+				8B4FC3671ABAE06E00EA053A /* JBDropDownList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = JBDropDownMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = JBDropDownMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
