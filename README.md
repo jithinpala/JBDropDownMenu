@@ -3,7 +3,6 @@
 ## Usage
 Please download example project and run 
 
-To close a popup, just call close() function of PopupContainer.
 
     class ViewController: UIViewController, JBDropDownDelegate {
         var categoryArray: NSMutableArray!
