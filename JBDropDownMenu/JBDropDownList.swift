@@ -67,6 +67,19 @@ class JBDropDownList: UIView, UITableViewDataSource, UITableViewDelegate {
         innerContainer.layer.shadowOpacity  = 0.5
         self.addSubview(innerContainer)
         
+        var headerLabel = UILabel()
+        headerLabel.frame = CGRectMake(10, 10, innerContainer.frame.size.width - 130, 30)
+        headerLabel.backgroundColor = UIColor.clearColor()
+        headerLabel.textColor = UIColor.whiteColor()
+        headerLabel.text = titleText
+        headerLabel.font = UIFont(name: "Helvetica", size: 15.0)
+        innerContainer.addSubview(headerLabel)
+        
+        var bottomBar = UIView()
+        bottomBar.frame = CGRectMake(0, CGFloat(DROPDOWNVIEW_HEADER_HEIGHT - 2), innerContainer.frame.size.width, 2)
+        bottomBar.backgroundColor = UIColor.whiteColor()
+        innerContainer.addSubview(bottomBar)
+        
         DropTableView       = UITableView(frame: CGRectMake(0, CGFloat(DROPDOWNVIEW_HEADER_HEIGHT), innerContainer.frame.size.width, innerContainer.frame.size.height - 50), style: UITableViewStyle.Plain)
         DropTableView.separatorColor    =   UIColor(white: 1, alpha: 0.2)
         DropTableView.separatorInset    =   UIEdgeInsetsZero

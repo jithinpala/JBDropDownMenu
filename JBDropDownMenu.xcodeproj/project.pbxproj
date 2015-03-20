@@ -439,6 +439,7 @@
 				8B4FC35B1ABAE03600EA053A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B4FC35C1ABAE03600EA053A /* Build configuration list for PBXNativeTarget "JBDropDownMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +448,7 @@
 				8B4FC35E1ABAE03600EA053A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
